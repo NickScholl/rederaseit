@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "RedEraseIt",
+  "version": "1.0",
+  "description": "just to make my life better, lol. it just removes the recent subrredits bc i hate them and also searches :D",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
